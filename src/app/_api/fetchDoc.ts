@@ -3,6 +3,7 @@ import type { RequestCookie } from 'next/dist/compiled/@edge-runtime/cookies'
 import type { Config } from '../../payload/payload-types'
 import { PAGE } from '../_graphql/pages'
 import { POST } from '../_graphql/posts'
+import { PROPERTY } from '../_graphql/properties'
 import { PROJECT } from '../_graphql/projects'
 import { GRAPHQL_API_URL } from './shared'
 import { payloadToken } from './token'
@@ -19,6 +20,10 @@ const queryMap = {
   projects: {
     query: PROJECT,
     key: 'Projects',
+  },
+  properties: {
+    query: PROPERTY,
+    key: 'Properties',
   },
 }
 
